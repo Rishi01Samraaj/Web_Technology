@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Appointment Booking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Samraaj Group Of Hospitals & Medical Institutions</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Search Hospitals</a></li>
+        <li><a href="#">Book Appointment</a></li>
+        <li><a href="#">My Appointments</a></li>
+        <li><a href="#">Admin Login</a></li>
+        <li><a href="#">Medical Bills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Find the Right Hospital for Your Needs</h2>
+      <p>Search for hospitals by location, specialty, or doctor.</p>
+      <form action="#">
+        <label for="search-term">Search Term:</label>
+        <input type="text" id="search-term" name="search-term" placeholder="Enter search term">
+        <button type="submit">Search Hospitals</button>
+      </form>
+    </section>
+
+    <section id="hospital-list">
+      <h2>Hospitals</h2>
+      <table>
+        <tr>
+          <th>Hospital Name</th>
+          <th>Location</th>
+          <th>Specialties</th>
+          <th> Appointments</th>
+          <th> Cases Dealt</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Samraaj MultiSpeciality Hospital</td>
+          <td>  Alwarpet Main st., Alwarpet, Chennai- 600028</td>
+          <td>Dentistry, Onthropology, Cardiology, Dermatology, Gastroenterology</td>
+          <td><a href="#">Book Appointment</a></td>
+          <td>200+ successful cases @ Samraaj Institutions</td>
+        </tr>
+        <tr>
+          <td>Samraaj High-End Diagnosis Lab</td>
+          <td>  Alwarpet 2nd Main st., Alwarpet, Chennai- 600028</td>
+          <td>Orthopedics, Pediatrics, Urology</td>
+          <td><a href="#">Book Appointment</a></td>
+          <td>150+ successful cases @ Samraaj Institutions</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="book-appointment">
+      <h2>Book Appointment</h2>
+      <form action="#">
+        <label for="hospital-name">Hospital Name:</label>
+        <select id="hospital-name" name="hospital-name">
+          <option value="1">Samraaj Multispeciality Hospital</option>
+          <option value="2">Samraaj High-End Diagnosis Lab</option>
+        </select>
+        <label for="doctor-name">Doctor Name:</label>
+        <select id="doctor-name" name="doctor-name">
+          <option value="1">Dr.Velan</option>
+          <option value="2">Dr. Giriesh</option>
+        </select>
+        <label for="appointment-date">Appointment Date:</label>
+        <input type="date" id="appointment-date" name="appointment-date">
+        <label for="appointment-time">Appointment Time:</label>
+        <select id="appointment-time" name="appointment-time">
+          <option value="9:00 AM">9:00 AM</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+        </select>
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+
+    <section id="my-appointments">
+      <h2>My Appointments</h2>
+      <table>
+        <tr>
+          <th>Appointment Date</th>
+          <th>Appointment Time</th>
+          <th>Hospital Name</th>
+          <th>Doctor Name</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>2023-11-20</td>
+          <td>10:00 AM</td>
+          <td>Samraaj Multispeciality Hospital</td>
+          <td>Dr.Velan</td>
+          <td>Confirmed</td>
+        </tr>
+        <tr>
+          <td>2023-11-21</td>
+          <td>11:00 AM</td>
+          <td>Samraaj High-End Diagnosis Lab</td>
+          <td>Dr. Giriesh</td>
+          <td>Confirmed</td>
+        <tr>
+          <td>2023-11-20</td>
+          <td>11:30 AM</td>
+          <td>Samraaj Multispeciality Hospital</td>
+          <td>Dr.Velan</td>
+          <td>Pending</td>
+        </tr>
+
