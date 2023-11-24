@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetCure - Online Veterinary Care</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Samraaj Veterinary Portal--> VetCure.</h1>
+  <nav>
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#farmers">Farmers</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section id="farmers">
+  <h2>Farmers</h2>
+  <p>Welcome to Samraaj VetCure's Farmer Portal.In heere, you can seek veterinary care for your animals.</p>
+
+  <h3>Login</h3>
+  <form action="#">
+    <label for="farmer-email">Email:</label>
+    <input type="email" id="farmer-email" name="email" required>
+
+    <label for="farmer-password">Password:</label>
+    <input type="password" id="farmer-password" name="password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <h3>Register</h3>
+  <form action="#">
+    <label for="farmer-name">Name:</label>
+    <input type="text" id="farmer-name" name="name" required>
+
+    <label for="farmer-email">Email:</label>
+    <input type="email" id="farmer-email" name="email" required>
+
+    <label for="farmer-phone">Phone Number:</label>
+    <input type="tel" id="farmer-phone" name="phone" required>
+
+    <label for="farmer-address">Address:</label>
+    <textarea id="farmer-address" name="address" rows="5" required></textarea>
+
+    <label for="farmer-password">Password:</label>
+    <input type="password" id="farmer-password" name="password" required>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <h3>Post Complaint</h3>
+  <form action="#">
+    <label for="complaint-animal">Animal:</label>
+    <input type="text" id="complaint-animal" name="animal" required>
+
+    <label for="complaint-symptoms">Symptoms:</label>
+    <textarea id="complaint-symptoms" name="symptoms" rows="5" required></textarea>
+
+    <label for="complaint-media">Attach Media (Video/Audio/Images):</label>
+    <input type="file" id="complaint-media" name="media" multiple>
+
+    <button type="submit">Post Complaint</button>
+  </form>
+
+  <h3>My Complaint Status</h3>
+  <table>
+    <tr>
+      <th>Complaint ID</th>
+      <th>Status</th>
+      <th>Doctor</th>
+      <th>Solution</th>
+      <th>Date</th>
+    </tr>
+  </table>
+
+  <h3>View Vetcure Details</h3>
+  <p>Here, you can find information about VetCure's services, doctors, and news.</p>
+
+  <h3>View News</h3>
+  <ul>
+    </ul>
+
+  <h3>View Doctor</h3>
+  <select id="doctor-search" name="doctor-search">
+    <option value="all">All Doctors</option>
+    </select>
+
+  <div id="doctor-details">
+    </div>
+
+  <h3>View Report</h3>
+  <p>Here, you can access reports on animal health trends and common diseases in your area.</p>
+
+  <h3>Post Feedback</h3>
+  <form action="#">
+    <label for="feedback-message">Message:</label>
+    <textarea id="feedback-message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Post Feedback</button>
+  </form>
+
+  <h3>Make Payment</h3>
+  <p>Select your preferred payment method:</p>
+  <ul>
+    <li><a href="#">Bank Transfer</a></li>
+    <li><a href="#">Easy Paisa</a></li>
+    <li><a href="#">BHIM UPI</a></li>
+    <li><a href="#">Government Scheme</a></li>
